@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotfluxo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="faixa-superior"> 
+        <img src="imagens/spotfy.png" id="spotfy">
+        <h1 id="letter">Spotfluxo</h1>
+    </section>
+    <section id="main">
+        <section class="loginbox"> <!--console principal-->
+            
+            <P id="titulo">Entrar no Spotfluxo</P>
+
+            <div class= "bloco" > <!--inicio do bloco 1, onde terão os botões de login-->
+                <div class="botao">
+                    <button class="loginbtn" id="btni">
+                        <img src="imagens/google.png" alt="" class="imgbtn">
+                        <span class="txtbtn">Contnuar Com O Google</span>
+                    </button>
+                </div>
+                <div class="botao">
+                    <button class="loginbtn">
+                        <img src="imagens/facebok.png" alt="" class="imgbtn">
+                        <span class="txtbtn">Contnuar Com O Facebook</span>
+                    </button>
+                    
+                </div>
+                <div class="botao">
+                    <button class="loginbtn">
+                        <img src="imagens/apple.png" alt="" class="imgbtn">
+                        <span class="txtbtn" >Contnuar Com A Apple</span>
+                    </button>
+                </div>
+                <div class="botao" >
+                    <button class="loginbtn" id="loginbtfn">
+                        <span>Contnuar Com Um Numero De Telefone</span>
+                    </button>
+                </div>
+            </div><!--fim do bloco 1-->
+
+            <form id= "formulario" action="#" method="post"> <!--indicação de formulario e bloco 2-->
+                
+                <div class= "label" id= "labelup">
+                    <label for="Usuario">E-mail ou nome de usuário</label><!-- indicador de user e eamil-->
+                </div>
+
+                <div class="caixa">
+                    <input type= "text" name= "Usario" class= "inputcaixa" placeholder= "E-mail ou nome de usuário" id= "user" required>
+                </div>
+                
+                <div class="label" id="labeldw">
+                    <label for="Senha" >Senha</label> 
+                </div>
+                
+                <div class="caixa">
+                    <input type= "password" name= "Senha"  placeholder= "Senha" id= "inptsenha" required>
+                    <i id= "eye" onclick="turn()"></i>
+                    <input type="checkbox" id="hiden">
+                </div>
+                <div class="check"> <!--fazzendo o tooggle slide-->
+                        <input type="checkbox" id="checkbox"/>
+                        <label for="checkbox" id="switch" >
+                            <span class="slider"></span>
+                        </label> 
+                        <label for="" id="lbm">Lembrar de mim</label>
+                </div>
+
+                <div class="botao" >
+                    <button type="submit" id="entrar">Entrar</button>
+                </div>
+
+                <a href="#">Esqueceu sua senha?</a>
+                
+            </form><!--Fim do formulário e do bloco2-->
+
+            <p id="lp">Não tem uma conta? <a href="#" >Inscreva-se no Spotfluxo</a></p>
+
+            </section>
+
+        </section>    
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
